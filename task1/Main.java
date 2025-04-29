@@ -9,9 +9,14 @@ public class Main {
         var cats = Cat.makeCats(10);
         Printer.print(cats);
 
-        // Сортировка по породе (используем ссылку на метод)
+
         cats.sort(Comparator.comparing(Cat::getBreed));
         System.out.println("Сортировка по породе:");
+        Printer.print(cats);
+
+
+        cats.sort(Comparator.comparing(Cat::getName).thenComparing(Cat::getAge));
+        System.out.println("Сортировка по имени и возрасту:");
         Printer.print(cats);
 
 
