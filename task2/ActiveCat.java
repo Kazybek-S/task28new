@@ -16,9 +16,9 @@ public final class ActiveCat {
             "Millie", "Daisy", "Jasper", "Misty", "Minka");
     private final String name;
 
-    private ??? action;
+    private Action action;
 
-    public ActiveCat(??? action) {
+    public ActiveCat(Action action) {
         name = names.get(r.nextInt(names.size()));
         this.action = action;
     }
