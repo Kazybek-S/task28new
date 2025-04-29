@@ -20,6 +20,14 @@ public class Main {
         Printer.print(cats);
 
 
+        cats.removeIf(cat -> cat.getColor() == Cat.Color.GINGER);
+        System.out.println("Удалены коты с цветом GINGER:");
+        Printer.print(cats);
+
+
+        cats.removeIf(cat -> cat.getName().length() == 5);
+        System.out.println("Удалены коты с именами длины 5:");
+        Printer.print(cats);
 
 
     }
