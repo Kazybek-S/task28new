@@ -1,0 +1,15 @@
+# Java class files
+*.class
+
+# Log files
+*.log
+
+# Build folders
+target/
+bin/
+out/
+
+# IntelliJ project files
+.idea/
+*.iml
+
