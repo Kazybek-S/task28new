@@ -45,5 +45,7 @@ public final class ActiveCat {
     public static String eat() {
         return "Я кушаю!";
     }
+
+
     /*****/
 }
